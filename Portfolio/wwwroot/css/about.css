@@ -1,0 +1,21 @@
+﻿.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-item{
+    margin: 10px;
+}
+
+#image-container {
+    flex: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+}
+
+#description-container {
+    flex: 3;
+    margin-left: 50px;
+}

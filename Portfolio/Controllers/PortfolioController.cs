@@ -4,11 +4,11 @@ using Portfolio.Models;
 
 namespace Portfolio.Controllers
 {
-    public class HomeController : Controller
+    public class PortfolioController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<PortfolioController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public PortfolioController(ILogger<PortfolioController> logger)
         {
             _logger = logger;
         }
@@ -18,7 +18,12 @@ namespace Portfolio.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult About()
+        {
+            return View();
+        }
+
+        public IActionResult Skills()
         {
             return View();
         }
